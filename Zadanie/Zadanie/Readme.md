@@ -30,8 +30,8 @@ lub w razie problemów z poprawnym działaniem
 ### 2.Uruchomienie klienta
 
 Komenda z poziomu folderu /Zadanie/client-app:
-npm install
-npm run dev
+* npm install
+* npm run dev
 
 Po wykonaniu powyższych kroków aplikacja jest
 gotowa do uruchomienia pod adresem http://localhost:3000
