@@ -23,13 +23,14 @@ Zadań przypisanych do danego dnia.
 Bezpośrednio z poziomu Visual Studio 
 lub
 za pomocą .NET CLI z poziomu folderu /Zadanie/API z użyciem komendy: 
->dotnet watch
+> dotnet watch
 lub w razie problemów z poprawnym działaniem 
->dotnet watch --no-hot-reload
+> dotnet watch --no-hot-reload
 
 ### 2.Uruchomienie klienta
 
-Komenda z poziomu folderu /Zadanie/client:
+Komenda z poziomu folderu /Zadanie/client-app:
+npm install
 npm run dev
 
 Po wykonaniu powyższych kroków aplikacja jest
