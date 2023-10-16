@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --accept-btn: #5ba718;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.row {
+    grid-column: 2/8;
+    padding: 1rem;
+}
+
+.headerRow {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column: 1/9;
+    padding: 1rem;
+    background-color: #286fcc;
+    color: #fff;
+    box-shadow: 0 0 5px 0 #333;
+    margin: 0 0 1rem 0;
+    position: sticky;
+    top: 0;
+}
+
+.headerRow > h1 {
+    grid-column: 2/3;
+}
+
+.navHeader {
+    grid-column: 4/6;
+}
+
+.createBtn {
+    background-color: var(--accept-btn);
+    border: 1px solid #000;
+    color: #ffffff;
+    padding: 0.6rem;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.createBtn:hover {
+    background-color: #77ff00;
+    color: #000; 
+}
+
+.deleteBtn{
+    background-color: #c92323;
+    border: 1px solid #000;
+    color: #fffdfd;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 0.3rem;
+    float: right;
+    font-weight: bold;
+    min-width: calc(100% / 4);
+}
+
+.editBtn{
+    background-color: #388cdb;
+    border: 1px solid #000;
+    color: #fffdfd;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 0.3rem;
+    float: right;
+    font-weight: bold;
+    min-width: calc(100% / 4);
+    margin-right: 0.5rem;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column: 1/9;
+}
+
+.taskList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    align-content:flex-start;
+    grid-column: 1/4;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.taskTile {
+    background-color: #286fcc;
+    padding: 1rem;
+    border-radius: 20px;
+    color: #fff;
+    border: 2px solid #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    max-width: calc((100% / 3) - 1rem);
+    min-width: calc((100% / 3) - 1rem);;
+    display: block;
+}
+
+.tileDsc {
+    background-color: #3232323b;
+    border-radius: 10px;
+    margin: 0.8rem 0 1rem 0;
+    padding: 8px;
+}
+
+.addFormBox {
+    grid-column: 4/6;
+}
+
+.addForm {
+    background-color: #3d3c3c;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left: 3rem;
+    color: #fff;
+
+}
+
+.input {
+    margin-top: 0.8rem;
+    width: 100%;
+    height: 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-indent: 0.5rem;
+}
+
+.contentBox {
+    margin-top: 0.8rem;
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-indent: 0.5rem;
+    resize: none;
+    font-size: 14px;
+}
+
+.formBox {
+    margin-top: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+.formBox > label{
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.formCreateBtn {
+    border: 1px solid #000;
+    color: #ffffff;
+    background-color: #5ba718;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 0.3rem;
+    font-weight: bold;
+    min-width: calc((100%/4) - 1rem);
+}
+
+.dateForm{
+    grid-column: 6/9;
+    display: flex;
+    justify-content: center;
+    /*padding: 0 5rem 0 5rem;*/
+    color: #fff;
+}
+
+.datePicker{
+    background-color: #3d3c3c;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #fff;
+    width: 60%;
+    height: 120px;
+}
+
+.info {
+    display: grid;
+    grid-column: 2/4;
+    background-color: #3d3c3c;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 120px;
+}
+
+
